@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
-const userRoutes= require('./router/patientRouter')
+const userRoutes= require('./router/userRouter')
 const connectDB = require("./config/db");
-const Patient = require("./models/patient");
+const Patient = require("./models/user");
 const productRoutes = require("./router/productRouter")
 const authRoutes = require('./router/authRouter');
 connectDB();

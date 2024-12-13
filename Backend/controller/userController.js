@@ -1,4 +1,5 @@
-const Patient = require('../models/patient');
+// controllers/patientController.js
+const User = require('../models/user');
 
 const postData = async (req, res) => {
     try {
@@ -10,9 +11,9 @@ const postData = async (req, res) => {
     }
 };
 
-const getData = async (req,res) =>{
+const getData = async (req, res) => {
     try {
-        const patients = await Patient.find(); // Fetch all patients from the database
+        const patients = await User.find(); // Fetch all patients from the database
         res.status(200).json(patients);
     } catch (error) {
         console.error('Error fetching patient data:', error.message);

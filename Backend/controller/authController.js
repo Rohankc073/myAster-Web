@@ -1,4 +1,4 @@
-const Patient = require('../models/patient');
+const Patient = require('../models/user');
 const jwt = require('jsonwebtoken');
 //Register and login logic 
 // Register a new patient
